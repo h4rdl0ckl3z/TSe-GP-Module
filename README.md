@@ -11,12 +11,18 @@ e_GP(['egpid']).then(function (data) {
 ```
 or
 ```
-const { e_GP } = require('./e_GP');
+import { e_GP } from './e_GP';
 
 e_GP(['egpid']).then(function (data) {
     console.log(JSON.parse(data));
 });
 ```
+
+### use command
+```
+ts-node example.ts
+```
+
 ### json to csv
 ```
 const { e_GP } = require('./e_GP');
