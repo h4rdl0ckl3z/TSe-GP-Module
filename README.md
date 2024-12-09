@@ -25,7 +25,7 @@ ts-node example.ts
 
 ### json to csv
 ```
-const { e_GP } = require('./e_GP');
+import { e_GP } from './e_GP';
 
 e_GP(['egpid']).then(function (data) {
     let converter = require('json-2-csv');
