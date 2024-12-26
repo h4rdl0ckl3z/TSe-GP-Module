@@ -51,7 +51,7 @@ async function parseAndProcessData(response: string, announceType: string, deptI
       const listData: Item = {};
 
       for (const [key, value] of Object.entries(item)) {
-        if (key !== 'description' && key !== 'guid') {
+        if (key !== 'guid') {
           listData[key] = value[0];
         }
       }
